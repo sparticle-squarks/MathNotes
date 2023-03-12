@@ -1,0 +1,403 @@
+<head>
+    <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=AM_CHTML"> </script>
+    <script src="https://laingsimon.github.io/render-diagram/drawio-renderer.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
+    <style>
+        .line-1 {
+            height: 1px;
+            background: black;
+        }
+    </style>
+    <style>
+        .cmjx-wrap_around {
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        }
+    </style>
+    <style>
+        .cmjx-term_definition {
+        transform: translate(100px);
+        font-size: 0.8em;
+        color: #6f4add;
+      }
+    </style>
+    <style>
+        .cmjx-redbox { border: 2px solid #DD4A68;
+            padding: 8px;
+            margin-right: 4px;
+            height: auto;
+            max-width: 80ch;
+        }
+        .cmjx-indent {
+            margin-left: 30px;
+        }
+        .cmjx-equation_number {
+            position: absolute; left: 600;
+            color:blue;
+        }
+        .cmjx-equation_number_auto {
+            position: absolute; left: auto;
+            color:blue;
+        }
+        .cmjx-nb { position: absolute; left: 1300px; }
+    </style>
+
+   <style>
+      .cmjx-note {
+        font-style: italic;
+        color: #FF0000;
+      }
+   </style>
+</head>
+
+
+<body>
+
+    <h3>Rational Numbers, Non-Terminating Decimals, and Percents
+        Fractions with Negative Exponents</h3>
+    <div class="cmath">
+        Rational can be expressed as a ratio of two integers, for example, 
+`1/8=0.125`<br><br>
+
+        Expressing a ratio of two integers can result in terminating (rational) or non terminating decimal (irrational) like
+`1/11= 0.09090909... or  0.bar(09)`<br><br>
+`class{cmjx-note}{"Note : When using irrational numbers in computations, either they should be expressed as equivalent fraction or round the decimal to an appropriate number of decimal places"}`
+    </div>
+    <H3>
+        Squences
+    </H3>
+
+    <p>
+        <b>Arthmetic sequence:</b> Differnece between any two consequtive  terms is constant.
+            The constant  difference is called <u>common difference</u> <FONT COLOR=#FF0000 >d</FONT>.
+    </p>
+    <p>
+        <h4>Derivation of nth term of arithmetic sequnce</h4>
+        <div class="cmath cmjx-indent">
+            `a_2 = a_1+d class{cmjx-term_definition}{ "Where: "a_1" - first term, d - common difference"` <br>
+            `a_3 = a_2+d`<br>
+            `a_4 = a_3+d`<br>
+            `...`<br>
+            `a_n = a_(n-1)+d`<br>
+            `class{cmjx-note}{"Note: the three dots '...' are called ellipsis"}`
+            <br><br>
+            `:.` <br>
+            `a_2 = a_1+d` <br>
+            `a_3 = (a_1+d)+d` <br>
+            `a_4 = ((a_1+d)+d)+d` <br>
+            `...` <br>
+            `a_n = a_1+(n-2)d+d`
+
+
+            `=> class{cmjx-redbox}{a_n = a_1+(n-1)d}`
+
+        </div>
+    </p>
+
+    
+    <p>
+        <b>Geometric sequence:</b> There of any two consequtive terms is constant.
+            The constant ratio is called <u>common ratio and denoted by </u> <FONT COLOR=#FF0000 >r</FONT>.
+    </p>
+    <p>
+        <h4>Derivation of nth term of geometric sequnce</h4>
+        <div class="cmath cmjx-indent">
+            
+
+            `a_2 = a_1r class{cmjx-term_definition}{ "Where: "a_1" - first term, r - common ratio"` <br>
+            `a_3 = a_2r`<br>
+            `a_4 = a_3r`<br>
+            `...`<br>
+            `a_n = a_(n-1)r`<br><br>
+
+            `:.` <br>
+            `a_2 = a_1r` <br>
+            `a_3 = (a_1r)r` <br>
+            `a_4 = ((a_1r)r)r` <br>
+            `...` <br>
+            `a_n = a_1r^(n-2)r`
+
+
+            `=> class{cmjx-redbox}{a_n = a_1r^(n-1)}`
+
+        </div>
+    </p>
+    <p>
+        <h4>Derivation of sum of first n integers: </h4><br>
+        <div class="cmath cmjx-indent">
+        `{:
+            (s_1     ,=, 1, ,),
+            (s_2     ,=, 1+2, ,),
+            (s_3     ,=, 1+2+3, ,),
+            (s_4     ,=, 1+2+3+4, ,),
+            (s_5     ,=, 1+2+3+4+5, ,),
+            (s_(n-1) ,=, 1+2+3+4+5+...+(n-1), ,),
+            (s_n     ,=, 1+2+3+4+5+...+(n-1)+n, class{cmjx-equation_number_auto}{(1)},)
+        :}`<br><br>
+        
+        `{:
+            (s_n     ,=, 1,+,  2,  +,  3,  +,  4  ,...,+,(n-3),+,(n-2),+,(n-1),+,n, class{cmjx-equation_number_auto}{(2)},),
+            (s_n     ,=, n,+,(n-1),+,(n-3),+,(n-4),...,+, 4   ,+, 3   ,+,  2 , +,1, class{cmjx-equation_number_auto}{(3)},)    
+        :}`<br><br>
+        adding (2)+(3) on both sides of the equations<br><br>
+        `{:
+            (s_n     ,=, 1,+,  2,  +,  3,  +,  4  ,...,+,(n-3),+,(n-2),+,(n-1),+,n, class{cmjx-equation_number_auto}{(2)},),
+            (s_n     ,=, n,+,(n-1),+,(n-3),+,(n-4),...,+, 4   ,+, 3   ,+,  2 , +,1, class{cmjx-equation_number_auto}{(3)},),
+            (2s_n    ,=, (n+1),+,(n+1),+,(n+1),+,(n+1),...,+, (n+1)   ,+, (n+1)   ,+,  (n+1) , +,(n+1), class{cmjx-equation_number_auto}{(2)+(3)},)
+        :}`<br><br>
+        ` therefore 2s_n = n(n+1)`<br>
+        `class{cmjx-redbox}{s_n=n(n+1)/2}`<br>
+        </div>
+    </p>
+
+    <p>
+        <h4>Triangle number sequence: </h4>
+        <div class="cmath cmjx-indent">
+        The terms in this sequence  {1, 3, 10, 15} can be arranged into triangles.
+        From the below figure, each term sum of each integers from 1 to the term number.<br>
+        `{:
+            (a_1 ,=, 1),
+            (a_2 ,=, 1+2),
+            (a_3 ,=, 1+2+3),
+            (a_4 ,=, 1+2+3+4),
+            (a_5 ,=, 1+2+3+4+5)
+        :}`<br><br>
+        `i.e. a_n = sum_(i=1)^ni`<br>
+        </div>    
+    </p>
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T18:22:25.952Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;_v9l99Pmy1s8ebIc5ffF\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;aGxrQPybHIknDtU89Yvv\&quot;&gt;7ZxBk5owFMc/jcd2gADqcXV328N2tzN76LGTkajMInFiXLWfvkESkQSntBYT37qHHXnAA37/GPJ/AXtovNh+YXg5/0YTkvUCL9n20H0vCGJvKP4XgV0ZQFFcBmYsTcqQXwVe019EBj0ZXacJWdU25JRmPF3WgxOa52TCazHMGN3UN5vSrH7UJZ4RI/A6wZkZ/ZEmfF5GB5FXxb+SdDZXR/Y9uWaB1cYyxWqOE7opQ/tt0EMPjRmlvPy02I5JVrBTXMpEjyfWHk6MkZy32eHt5fmNedHzLqZP9y84Hj3dP3+SWd5xtpYXLE+W7xQBkUXAFgujzTzl5HWJJ8WajZBbxOZ8kYklX3zEq2WpwDTdEnHQEaMc85TmIuSJxWmaZWOaUbbPizzxNx6LuDwFwjjZnrw2/0BMtDRCF4SzndhE7hAiSV22sqAvlzeVZqpFzY/lkjEsW8nskLkCKT5Iln/BNQDCte8YVwSEa6xxHVjmGgLhOnCMawSDaxQ41g/EQLj6jrXXPhCu+njANtcBEK6exnVomesQCFe9f7XNVSW+erCha2CBOK5Y7wlsjwh8IJYrGjp26/KBeK7YtbGWD8R0Rbrpst7HAnFdRh9rHSwQ2xU7N9yC4ru0eiHybIOFYryGroEF4rz0UYF1sKprunqwyDWwpvPyDbLienkd4Yoz+kYUpJzmROMmQzhLZwXWieBDRHxU0EsnOLuTKxZpkmSnNGN0nSeFQntZ/gP+UL/FRSZ+1IA/6Ay/6c8QYPz6BI91/KaLi+HiN+rq1vGbXk+dIkj+ehHDOn8glrDvWtktgGIJXSu7BUAsYd+1slsAxBLGrpXdAiCW0OhjbYNVd8qrB+ta2Q1BmYxzreyGTLN3nWBdK7shIJNx+qjAPlggk3F918puCIjzirWKDvJtg4XivAaugYXivDzXwAJxXvo41j5YKM4rdAysOp/jsm1koAVTtjWKYLbLtmEbH5End8WLfhXVIyHqiEpZ1Ht83ucgMrQSLfrxsWjTB6IkMd4Q/CPPI15RAy8VYyQT36z3evomiPII32kqDlxNMumFioGmw4qu2YTIvSopjET9U68jqUQcsxnhRqK9pofLPkPmNq7mJrNeNjlbZj1R1zK38Vg3mXXndq7MRqKuZW7j+G4y62Ocs2XWE3Utcxv/eZNZqaOPkf5ZZj1R1zKbbhjwY1NoMKzfIhvm15tGwN05ENPamV8zuPgbJosvil/1Bh/jqTUDf8ME3WXxmxN04cfB31S7vyx+034Drn4Y+BuqT5fF32CLYw//9HtqTABRBuPJ5aCdDJ0VoaIGP1PIEMCWQS8WWJehYVqmkAGBlsF4ktm6DA2TOIUMIWwZ9Mq4dRkapnwKGSLQMhgTFN3JIBar3+YrzXT1A4fo4Tc=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <p>
+        <h4> Law of exponents</h4>
+        <div class="cmath cmjx-indent">
+        `a^m.a^n = a^(m+n)`<br><br>
+        `a^m/(a^n) = a^(m-n)`<br><br>
+        `(a^m)^n = a^(m*n)`<br><br>
+        `a^(-n) = 1/(a^n)`<br><br>
+        </div>
+    </p>
+
+    <H3>
+        A percent of a Whole is a Part
+    </H3>
+    <p>
+        <div class="cmath cmjx-indent">
+            `class{cmjx-redbox}{% xx W=P}`
+        </div>
+    </p>
+    <h4>Example</h4>
+        <div class="cmath cmjx-indent">
+        `"32 ounces is 25% of a gallon. How many ounces in a gallon?"`<br>
+        `"using " % xx W = P`<br>
+        `25% xx W = 32 oz`<br>
+        `=> W = (32 oz)/(25%)`<br>
+        `=>W=32/(25/100)oz`<br>
+        `=> W = 32*100/25oz`<br>
+        `=> W = 128oz`<br>
+        </div>
+    <h3>
+        Graphing solutions to inequalities on a number line
+    </h3>
+    <p>
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T05:23:00.160Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;CsvMfCixI1pVIFtayQsJ\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;6Gdyy6Eo40bECnAvsNyl\&quot;&gt;3ZnJcuIwEIafhmMoW16AY+Isc0lVanJIMjeNLUAzwqJkEUyefiTUXmSHHQITX2K1pbbU/9dtoXS8aJI/CDwdP/KEsA5ykrzj3XYQch0vVH+0ZWEsoQOGkaAJdKoMz/SDFCPBOqMJyayOknMm6dQ2xjxNSSwtGxaCz+1uQ87st07xiLQMzzFmbesLTeTYWPuBU9l/EDoaF292HXgywUVnMGRjnPB5zeTddbxIcC7N3SSPCNPBK+Jixt2veFpOTJBUbjMgcH99vL7M/2AUPUYPg99Xb4vHKwRqvGM2gxXDbOWiCIFyo6KtGjfzMZXkeYpj/WSuBFe2sZww1XLVLc6mRoIhzYl6682QpxIkdRG0I864WDr2HHVFkbILLrGkPFVmRzVhSkRIkq9crFuGULFH+IRIsVBdYADqQ9QBuyAAF/NKRDcwpnFdP7BhwGZUeq4iq24guLsEuneBgR5SxmrdQnXd3x9HgMC9NAH6WwiQJte6ZqhWzHCW0VgFI5NYyMKc8pTYWgg+SxMtgonolkKYV5OkVXwa8VXT4zMRk41ktYWoBbqoVvVAFzZBmELi3Z7HZ9GHNzxxqmZY6uzbMvcGtgMzexhTL04NN6HfxKXhSIkwIrLlaIlCuegD6BjsRAdgYKFREfOFdJiwbCzw56IDORtk3ZYPv7+esxPj4TkH43GJlSPcFqKzlhjXC2zt+93GR+J/ocjdh6KDiSE5la/gQd+/6fEqhKZ1m4O7ZWMBjUwK/rfc8Xqn4O5sNanxqbly94OpvcP5YprQZprimXhf8rLU/rPdzUq6bALQLrylamElcLrxViCmGxVwy9aiht9yUHfpvALVD9eSqhtPRFAVTiI69R8Q3+H7iXpd5NQuuxIGDur2BrVrz7rYt91624GsYMKLWrep7pCtWUzYSBjYdK2aFRo0Vuta/dWNmcFxs8q71KyC/HB2qOL7ZeIxs+esG4eg1wDO8ffLD6+5jT1NggSNL5M/WJ8ggbc2oU6UIH4rQWgas5lmvJkokuTSzgbDf8E37HDqxxBgwoyO9ClFrJDTZf1GH0bQGLNreDChScJWHZXYOQfzPeg0o0GS3wcCaiCHn4BcCHT00wy/Xabu8u+uAmrsuPzeuVVo58JPMhUkUwsy52zI4UPtRWdIZgw4TXR5zUvLt5UrsOUKiypak6s8pz1QL9WsTtJNqav+H+Hd/QM=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+
+      
+    </p>
+    <h4> Examples </h4>
+
+        <div class="cmath cmjx-indent">
+            For  inequlity a number doubled is greater than 4, show line graph and mathematical representation<br><br>
+
+            mathematical representation is  `2*x > 4`<br>
+            dividing both sides by 2<br>
+            ` 2*x/2 > 4/2`<br>
+            `:.  x>2`
+
+            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T05:29:53.387Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;b2YqteY2dvz7AeBunDbd\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;6Gdyy6Eo40bECnAvsNyl\&quot;&gt;7ZhNj5swEIZ/DcdIgCHJHlt2s71EqpTDtr15wYBbByPjLGR/fQ3YfDmbkpQmqgSX4JfxzDDzAI4N4O2LZwbTeEsDRAzbDAoDPBq2bZlgKX5K5VgrS1MKEcOBNGqFHX5HaqZUDzhAWc+QU0o4TvuiT5ME+bynQcZo3jcLKelHTWGENGHnQ6KrLzjgca2uXbPVvyAcxSqyZcore6iMpZDFMKB5RwJPBvAYpbw+2xceImXxVF3qeZsPrjaJMZTwMRNc68f7t5f8J7S9rff88Lr4ftwuHLd28wbJQd6xzJYfVQkiRg+pNEOMo+JU4eGrMjf1xKzmdgUniO4RZ0dhIh3ZjpyiEAEyh7wtuLOWNnGn2PZa9ln2OGpct2UQJ7ISl1Rl+eeqoCT4VPIlRj6BWYZ9A3yO+V4EerTEqShaEqAyiilGGWf0V0NQeT2kCZe4W7Yce5RQVrkHpjg8r5oJGdcjVfIGExVOpNMZ1dmiQGO77ckZHPROdTrhnmiE0hgikOO3ftBT3ZERvlIs0mkaP2hnRg/MR9KmC7aaVgzYOO1GFCpCXHNTgdHc4l+wstJYWVjnaElogsajYl+Ayn/WdfUeWfbbdy0GQz83xmCtYWDOFIynwDanoWDo58YUPGgUgJmC8RQAexoKhn5uS4EqRoeCs+uHmYLBM7ye6F1w14WBa2kUzOuCSyhwJqLAuSsFtkaBM1NwwRdhotXh0M84Clo3ypCGYYb+DSlAI2UG5fqPxrV/Jld3fVs4IxggBKdZ2fs8xhztUuiXV3IG0z4PMEvrHbEQFyUWowEIMSEdfVMdFWBcdIgmkjCZqr4ldDUpqpUr+Sh0yLFcnRylXbD/I4btjlvdtXbfEjz9Bg==&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+            <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+            <br>
+            <br>
+        </div>
+
+        <div class="cmath cmjx-indent">
+            `"Solve and graph the solution to this inequality: "3x+1 <= 7`<br><br>
+            `=> 3x+1<=7`<br>
+            subracting 1 on both sides<br>
+            `=>3x+1-1<=7-1`<br>
+            `=> 3x<=6`<br>
+            Dividing both sides by 3 <br>
+            `=> (3x)/3<=(6/3)`<br>
+            `=> x<=2`<br><br>
+            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T05:36:52.255Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;d6NwJRAy9LMDH7_Tocie\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;6Gdyy6Eo40bECnAvsNyl\&quot;&gt;7ZhNc5swEIZ/DUdnAPFhH1sSpxfPdCaHtL0pIEAtRoyQA86vrzASX3Js7JDanbEPNnpZrcTus7KQBrx1+UhhFq9IgBLN1INSA/eaaRo6cPhPpWxrxdGFEFEcCKNWeMJvSPYU6gYHKO8ZMkIShrO+6JM0RT7raZBSUvTNQpL0R81ghBThyYeJqj7jgMW1Orf1Vv+GcBTLkQ1d3FlDaSyEPIYBKToSeNCARwlh9dW69FBSBU/Gpe63fOduMzGKUjamg238evvxXPyGprfyHhcvs5/b1cy2azevMNmIJxazZVsZgoiSTSbMEGWo3Bd4+CLNdXViRvO4nBNE1ojRLTcRjsy56CIQcV3RLtqAW9Im7gTbEhoUOY4a120Y+IWIxClRcf5FVA4kRI3V5WLhHo8FSoMvVa3xlp/APMe+Br7GbM0Hujf4JQ9VGqBqFJ23ckbJn6aaqvshSZkofcMUbY8khO7cA51/PG/XE1KmjrSTlziRw/HpdFr1bFGg1PmxTDhHM2HvSYTUKEogw6/9QfdlR4zwnWA+naYIDOPO4suMa8jvRd9DTjbUR6JTt+qln3IAy0i/PJQRYorfHTpNED5A01yhaWYc4iklKRoPk3kCTP8ZF3J9cfr5HNb9WC6Gfi7NxULhQr9hMR4LU58Gi6GfC2MhIe1gAW5YjMcCmNNgMfRzaSwMBYuDm5IbFoMqn0+0WlzX5sIxFSxue4tTsLAmwsK6LiyAgoV1w+KEP5GJtpxDP2di0fqVhiQMc/Q56FgKOio5SYKzvCKmiDFDTxn0qzsFhVmfIphn9QlViMsKptHYhPxltqM7/LNc7rBkPK8kFVxq7x1GnM2XrGcX9BInWh36DFulT2qTn0g4I86srrucj5/xfOYb5LAKz1zkXavvR79bLNpqNh13okWeN9tD0tq8PWoGD38B&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+            <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    </div>
+
+    <div class="cmath cmjx-indent">
+        `"Solve and graph the solution : "3<=x-2`<br><br>
+        Adding 2 on both sides of the inequality<br>
+        `=>3+2<=x-2+2`<br>
+        `=>5<=x`<br>
+        `=> x>=5`<br><br>
+
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T05:40:56.507Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;5oB-TcPMqeB6t7OHFmgu\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;6Gdyy6Eo40bECnAvsNyl\&quot;&gt;7ZpLb+IwEIB/DUeQHZPXcZuW7qXSSj203ZtLDKQb4sgxJfTXr0OcpykkrduClBwgHiZjZ+azPWMxQt46vWU4Xt1Rn4QjA/jpCF2PDAMCZImvTLLLJRaQgiULfKlUCe6DN1I8KaWbwCdJQ5FTGvIgbgrnNIrInDdkmDG6baotaNjsNcZLogju5zhUpQ+Bz1e51DFBJf9NguWq6BkC+csaF8pSkKywT7c1EboZIY9RyvO7deqRMHNe4Zf8udk7v5YDYyTiXR4w4d+3x4ftCza8O+/WfR4/7e7GlozGKw438o3laPmucMGS0U0s1QjjJD3kePxcqAN1YLB8XcEJoWvC2U6oSEOufEIS4roob28rf1uW1FnVfI1sGWYZ4mVpufKCuJGO6OMU+7RTSOT/yvASrYhGQni14mvRyzUUt8JhkU+yLoBoJZzRfyU9whFXCxpxiTos2h4NKdvbRkBcnifkJA34o7SZ3T9lFiembF2nsoN9Yycb+UiJr2BdheMoCQndsDk5omijw9Gshcs8EK1CxkiIefDaHN2hEMoe/tBAjLuEZQqatMAWBPnw5UP12dCyUxIl7bTMcMyWhCtm9jiV7/wJwpxehM1DnCTBvDtksAdkiXhXrva0F8+CsOhODKfW+hxl3w6PDLIzmYql24byc2peJDuuwo51DJ6vW54uDIJiBTHcieta1WU3gtneVbpCccLsCfS+mBkbKMyYAzPdmUEumDiodmlB5rjVHyYGKsRMB2J6EGNCPYy07PwwFYZChT1Q0WPvsYEWKtp2PkZFZbZQpItFQr6GHKSQo4IThqKsz4DZrgJO7mO8L0S2DMdNiHAS57X+IkgzljpTsxAZbE2ebdOz2Z5KLsJKo1G9hjpQ7H4Yr2I2O3ACrGLvrTEHTZU5aL6P16fqW3uqxMIdZnH3WWxOm6mengTyuNXmDEeoNehzmOGmQpUzUNWDKggmAGhPMk+YvQCu1CPK8ZCK9klF9eQcSEfKoQ0K9Yh2PEYDFd2p0JSJaklEtVGhHquCgYnuTEBXDxRtOxdQnqiHqmM4oNMDHVMTOuY5LSiOem46PlC3Dli8iwXUhAU8KyzUw9FhsehBha6UVE9O+p37jGMo5AxZa59aRtN60rZz/mWwox6gDjtRnzVHU8FzvOL5XnJEs/r/WK5e/QsP3fwH&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    </div>
+
+    <h3>Parallelogram</h3>
+    <div class="cmath cmjx-indent">
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T05:18:34.965Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;yeFOaO2aTDqMZ7quB7Jg\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;6Gdyy6Eo40bECnAvsNyl\&quot;&gt;7VfLbqMwFP0aNiM1AlzSdJlHp7OJFCmLtrNz8A14xmBknIb068cONo9AHq2aSiM1i2AfX1/sc44fOGiaFI8CZ/GcE2CO75LCQTPH9z0XDdVDI7sSGboGiAQlJqgGlvQNbE+DbiiBvBUoOWeSZm0w5GkKoWxhWAi+bYetOWu/NcMRdIBliFkXfaJExiU6Ctwa/wU0iu2bPde0JNgGGyCPMeHbBoQeHDQVnMuylBRTYJo8y0vZ7+eR1mpgAlJ5SYfA+/32/LT9g/3pfPp4v7p52c1vTJZXzDZmwmawcmcZiATfZCYMhISij3e8suFud1xeNVtlE+AJSLFTITbR0HQxDrk11W1Nd2CxuEm1ZRobiaMqdc2CKhgi3kGKf54UJWami2qamDFgPBI4cdAkA0HVIEActi3qhsk2phKWGQ51hq1aNwqLZaLGOPNUcU0LsCtB1/OyqCyHJkd1aPJ9XOmuCA2WkdvD8uhaJKPzJENKxnoJq1rKUwVOCM5jIIaXBmUaX2Cp6E33iO8iTZwU/G+1bNXsJ8rKKdkn0GRCQeWzLg9GKDD1F1W/cQfuPoEGZkUjerZrVBqSzmptgHQ2lEuUURPnGxHCOVueVDDoEdBiAhiW9LU9tj5VzRsWnKpRV6u0Wpa7I6uvHL7p1dyGDhMF7USHBpNYRCA7efYeq2b9cdvdftvu4g3hinYKvEHQ3vUHd8F94+d9zF2B1zZX8KXmCjrmik+5K2Q4z2m4twwWsgs3rNa20H+pOfJPr/xLNa7yfJGqw54tY4gTfWqnq1w/VofAt+qff1B0El1Z9ruO7GMBWCF8rT9CYtD/guI00iVn6I71Qwe6qx+xY2+1DROoO5ts61seFVPOuKhPmzVl7ADCjEb6iAmV0PsrpL4BUvWVMjYNCSVEv6b3btnnok+8Qtplef4e7416fIbef8NU1fq7qdS7/vpED/8A&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script><br>
+        Explain why does the formula `A = (1/2)*b*h` work for finding area of the triange?<br><br>
+        `"A triangle can be considered as "1/2 "of a parallelogram.",`<br>
+        `therefore  A=(1/2)*b*h, "works as area of the triangle"`
+    </div>
+
+    <h3>
+        Straight line, linear equation, slope intercept form
+    </h3>
+    <h4>Slope intercept form of straigh line equation</h4>
+    <div class="cmath cmjx-indent">
+        ` y = m*x + b`<br>
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T05:56:37.438Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;74tefNioavoyE9fOWGLK\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;f6WT5G2Fv23S1bpFct7r\&quot;&gt;7ZjJbtswEIafxscUWmn5mDhLUbRoUB/SnAJaGtlsKVGg6EV9+lIWqd0rEicuerI4HA7J+X4PRQ3scbR+4DiZf2MB0IFlBOuBfTuwLNOwkfzJLVlhQYYyzDgJlFNlmJA/oEcq64IEkDYcBWNUkKRp9Fkcgy8aNsw5WzXdQkabsyZ4Bh3DxMe0a30igZgrq2kYVcdnILO5mtpzVUeES+fCkM5xwFaFaeNj3w3sMWdMFE/Regw0T57OSxHofktvuTAOsThkwOPL5Ms0m6Bf5Ok7tp5X4kcmrlSUJaYLtWG1WJHpDEAcXOeJlC2f4jQl/sC+mYuISoMpHzlbxAHkkxiylQrMRdd/Y74nVA+SQWut7lbUuiBo0FEbewAWgeCZdFhVTHTi5zUa2saBYkGWTaZYSWNWhitneGRErsQylIwdT8VRInY0fR0iZQvugxpVZ7AnkGm1Ask0zUB0AsmH2rYr0wbxEbit/7gPwG3bZoOS5Z2IGzl7Ar0xbvso3DGLock6FZz9Lutel34omY4ZZXwTywYzcGFYjqv1jNDQxugS0KNX+qcjpxnIagd6Y/ROD3qEo0QyiKdp/pNdyalBbiYR7a6OSvwFX26oqz/zERWC4inQR5YSQVgsbRRCiexmCVwQecx+bXULli8AUzLLW7wAXHpfK/uUCcGiC9ST7Zx6cgxHzUCmeZCeJCmc1dyS3CHdcdRZrXlcY/e62v5qXZWcixW8qrjd89a10PPB9/vq2tRzHde4AB26bqscIec0HXYCWd5Z6xo6M/oQUD/6YDiaGpeAHhnmbmKHo98T6I3RDzvo+SLu0BewFn3INToliTpnZdKHjg/5udhz6kQkCPJpblZzImCSYD+fcyUvvh0ZbRVFHhPWO2VRpttqpNscKu3XZIN6ZGMb2xXSQHJs/r1u/kkK/y4AR3+q0HrX14L3AqC/iRxX/LZc0ba+sFV3taIlV/4zb3xydfO5fBGUjdt13fM266+jAQYv7K2jyPdgGu4iVpSV/YXhg9Rbt/XK19HDyUftma8Q+g3zXeRm1sVW094HkJv3seTWVsmpNwx31DxvLBO9ktxks/rMWbhXH4vtu78=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+        `class{cmjx-term_definition}{"y - output / range"}`<br>
+        `class{cmjx-term_definition}{"x - input / ordinate"}`<br>
+        `class{cmjx-term_definition}{"m - slope = rise/run"}`<br>
+        `class{cmjx-term_definition}{"b - y intercept. point where line intercepts y axis. or  y when x = 0"}`
+    </div>
+
+    <h3>
+        Nets of Prisms, Cylinders, Pyramids, and Cones
+    </h3>
+    
+        Surface of a solid as a hollow cardboard shell, then cutting open and spreading out the cardboard creates a net of the solid.<br>
+    <h4> Surface area of a cylinder</h4>
+    <div class="cmath cmjx-indent">
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T06:27:35.965Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;fAkmOSMBfaR36GaMM0D3\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;OvttE_yCLAEoSwjfdCxn\&quot;&gt;3Zhdb9sgFIZ/jW8qtbJNPpzLNe22i26q1k5rd0ftExuNGAuTxtmvHxRsg0matmujbjeReYFDeM57wEmA5svmE8dV8YVlQIM4zJoAnQVxPB2F8lMJGy1EcYK0knOSGa0XrshvMKKZmK9IBrUzUDBGBalcMWVlCalwNMw5W7vDFoy6q1Y4B0+4SjH11R8kE4VRozDsOz4DyQuzdDI2HUvcDdZCXeCMrbX0MAadB2jOGRP6adnMgSp4LRcd6OOO3u6LcSjFUyZc17ffLuZxss7Rz/k159/ReXQcmTD3mK7Mjs23FZsWQc7ZqvJXa2cCF9BsywW+ayP025U+AbYEwTdynJmFxhM9z3jkeBobj6wt4hPDtbBgdyI2Wc674D0I+WBYPIML2o9FUikzUEHCAJ2uCyLgqsKp6l3LWpBaIZZy0bNIPi5YKYy5I4ni1Mf5eHqGkHfCbAvOQpcclNxoPzkZRZYv7KeG60rX9II0ivQBMHbnlM9xtIXj6K0wjv9tjM07wTjxMH4FIQW2UOfUhhJZwtwjK3cnXIS14OwXzBllXColKxX2BaF0IGFK8lI2U0lSBkanihWR18kH07EkWUZ35cw9UuwsRW96ZsTO+RuF/vE7TfykIfRGSUu8pPkpgjL7oK73Hr2Vrd0cldslPr65UZ0n47Z56zbPGjNXtzZ26xI4kftU2dViQ8SNWVg931p6H0c12jA7PUHxHdBLVhNBmOqgsBDW+ItBt2CVZTmuM/Ncm9RsxVPYfxIJzHN4LKAZB5nzQuWbznLVeMtR0GocKBbk3n0N22Y1s8IlI6Xw78HO024AvWszx35pGoSZuWGOhweVpuLFebB9t+eXV8LMvwUmYXxUkSMetDf49qJIKa5rkj4cXZgLX35+uUQnIZq6BTOaTf+mZEK7ZHT17Sya17Y1eqKt0buydTS09Qt9PXHjjA9r63YXlq+LA5m5dd7JNEkc98269nb/qcbQx6/tydF/6TX0WuaSzf7nsh7e/+mAzv8A&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+<br>
+        `{:
+            ( text{surface area of the cylinder} ,=, 2*("area of the bases") + (2*pi*r)*h     ) ,
+            (                                    ,=, 2*pi*r^2 + 2*pi*r*h)
+        :}`
+
+
+    </div>
+
+    <h4> Surface area of a cone </h4>
+
+    <div class="cmath cmjx-indent">
+
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T06:37:17.772Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;rEaEYNB8Vu41vAPuAVW9\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;OvttE_yCLAEoSwjfdCxn\&quot;&gt;7Vnfc6M2EP5rPNM+mBESCPyYOLn24TqTaa7TS99kIwNTGfmEEjv96yuBBAhwbCchvc5cHmJr9Xv3291v5Rlabg+/CLLLfuMJZTMIksMM3cwgjAKg/mvBcy3wYYxqSSryxMhawX3+DzVCMzF9zBNaOgMl50zmO1e45kVB19KRESH43h224czddUdSOhDcrwkbSv/ME5kZqQ9A2/ErzdPMbB2HpmNLmsG1oMxIwve1qBqDbmdoKTiX9bftYUmZVp7VS73QpyO9zcEELeQ5E76UD79/XsJ4n6K/ll+E+APd+nNorPFE2KO5sTmtfLYqSAV/3A13Mwd4okLSw5gtyMqu0F5X4YTyLZXiWY2zs1BczzMYmYdBWAv2HY0vzMGyjrJhYI5PjJXTZvFWEeqL0cUFevHxab3om+cKKZ/JirI7XuYy54XqWnEp+XaGru2AK5anukPynZJmcquOcuOrrwoSO73Y9pBq7/FWpMzXHhFr3SeJkFdFWu0GvGABQRDHUYAif+H7MVZDaJG0Axax6o3gIkIxXvjKy9D1hhfSeJSvtxva8GVM9C171IJWOdbJR8xn/aVrPt/6yvubLzptPq09HSBUq+AFdS2jIF8kVG8BRhRJD7n8WpulNoRqP6j2HHgAWMHNwcyuGs+dxh0VubonFUZ2oV1K/ijW9Azw0sSJbUPzdQwUjtjHygRlROZPbkQcs5nZ4Y7n6iItOnwXHmHorlDfx0zqBrDeOk0IeLah1l1HOUxK5WCdCkDNpd+AqXiIKQzKb0L+JGbhreq6zvTnz0o6DdhCP+iAzfeAcrQfWHMwEgMPg86fi5go8IJu7+J/CUST518ObowphqRxts9ySe93pLLiXqUZF3uk3NW0aZMfNAQd+MEpk4alhjZpYDzIGlE0BIqVvXvOaAhNV62YbLXCilWpP0Rf8K5+XqhbfLWuqxsPZl7VaF28alkfv9A834ubug4EwStTQuh7MMIojheKCvoYukQSIt+LIMKKrUchjlEEP9ZPxzgkZtLY3gEO/vbIbce8rFBxpQb4cHeojGz71be0+sSAsF1G1JhqPmiHMFqkyoQQ8I0uljJaVULrzho6P9XnUPeqj2JW7cNZubLsUVYp+N90yRkXLcY3OWM9ETGcd61wqZPPgAxv8yRhxwLUy54yWUjqZYsRGovjoU+gqVgsDE4H+qmLM4TdMD0P4Yha4Eigbij/+7N7eFovUxVna4P4V0IyOGKX45CMhtoeraWm0/bwiSCbJu95YTfzgROZr2r16W2HLANLnqvFvDicrjAzVj1Nlg1O68RzxsDvJV27MaDPd8/N1j3GN48+uIAbhlMxFZCRg2QFvreB2feRA+ZF9APMr36OcFHYB+G5YI7cZeAHYzkcpsDXPEasGSlVWrsE5vXD5GB+Jf6UM7uI2qTTuhB8/zVU3hjo+u+aUxcaI2DoF6pYVwKS1Nz/5Rr2GHVqGPtRKn/203a3hpipMg1EaHHb9NgfWlq0Na/cGGKIUISCEOFA2819BI+jcASxrHeRpiaxRQqjGzkK0mM0+jhdBr0cF9jc2UFsgIeItbIL6Jtqtr8e1Vhqf4NDt/8C&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script><br>
+        
+        `"length of the arc " alpha = " perimeter of the base" = 2pi r class{cmjx-equation_number}{(1)}`<br>
+        `"also, length of the arc " alpha = theta/360 * "perimeter of the circle formed by" sqrt(r^2+h^2)`
+        ` therefore alpha =  (theta/360) 2 pi sqrt(r^2+h^2) class{cmjx-equation_number}{(2)}`<br>
+        `"from (1) and (2),"`<br>
+        `theta = 2 pi r 360/(2 pi sqrt(r^2+h^2)) class{cmjx-equation_number}{(3)}`<br>
+
+        `"Area of the sector" = theta pi (sqrt(r^2+h^2))^2/360 class{cmjx-equation_number}{(4)}`<br>
+        `"substituting (3) in (4)"`<br>
+        `therefore  "Area of the sector "= (cancel(2 pi) r cancel(360)/(cancel(2 pi) cancel(sqrt(r^2+h^2)))) pi (sqrt(r^2+h^2))^cancel(2)/cancel(360) class{cmjx-equation_number}{(5)}`<br>
+        `=> "Area of the sector" = pi r sqrt(r^2+h^2)`<br>
+
+        `"surface area of the cone" = "area of the sector" + "area of the base"`<br>
+        ` therefore {: ( " surface area of the cone" ,=, pi r sqrt(r^2+h^2) + pi r^2),
+                       (                             ,=, pi r (r + sqrt(r^2+h^2)))
+        :}`
+    </div>
+
+    <h3>Experimental probability</h3>
+    <div class="cmath cmjx-indent">
+        <font color=#0000ff>Theoretical probability</font> is probabilty found by ananlyzing a situation.<br>
+        <font color=#0000ff>Experimental probabilty</font> is probability determined  statistically.<br><br>
+
+        `("experimental probability")=("number of times an event occurs")/("number of trials")`<br><br>
+        `("experimental probability")_(n -> infty) -> ("theoritical probablity") class{cmjx-term_definition}{"n - is number of trials"}`<br><br>
+        <em>Note : As number of trials grows, the experimental probability tends to approach the theoritical probability of an experiment</em><br>
+    </div>
+
+    <h3>Propery of the roots</h3>
+    <div class="cmath cmjx-indent">
+        `sqrt(ab) = sqrt(a) sqrt(b)`<br><br>
+        `root(n)(ab) = root(n)(a) root(n)(b)`<br><br>
+
+        `class{cmjx-note}{"Note: "sqrt(a+b) != sqrt(a)+sqrt(b)}`<br>
+    </div>
+
+    <h3>Area of the trapezoid</h3>
+    <h4>Definition</h4>
+    <div class="cmath cmjx-indent">
+    A trapezoid is a four-sided closed 2D figure which has an area and its perimeter. Two sides of the shape are parallel to each other and they are termed as the bases of the trapezoid. The non-parallel sides are known as the legs or lateral sides of a trapezoid. The shortest distance between two parallel sides is known as the altitude.
+    
+        <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2023-03-09T20:15:05.385Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.8.10 Chrome/106.0.5249.199 Electron/21.3.5 Safari/537.36\&quot; etag=\&quot;SjTYfvVsmsY-f5l9hnAK\&quot; version=\&quot;20.8.10\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;aGxrQPybHIknDtU89Yvv\&quot;&gt;7ZhPc6MgGMY/jcfdQVGTHNuk2x666c70sGdWWGWCvhkk//bTLypqlGmbZNJ0MtFDRh7hQd4fLxAdPE23j5Isk59AmXA8RLcOnjmeF6KJ/i2EXSXgIKyEWHJaSW4rvPJ/zIjIqCtOWd6pqACE4suuGEGWsUh1NCIlbLrV/oLo9rokMbOE14gIW/3NqUoqdRygVn9iPE7qnl1knqSkrmws8oRQ2FRSWQc/OHgqAVR1l26nTBSxq+NSGf1442nzYpJl6pAGi5f5QqJgvgvhefZCwvvn2fxbaGzWRKzMiM3bql0dApbRuyKSupRBpsX7RKVCl1x9K2GVUVZ0gXQpVxIWbAoCZNkWo/JqntQhLFpW/TBqxb8dkNuESU8vBilTcqerbFoQNYdkj0GtSSaI4uuuPTHzIW7smh5+Adcde8hMXd83PvXMNfFtLHJYyYiZVvuB7xuNu0ae3zNSRMZMWUb6Zm/YrVRyPYaxNzB+A83IOxPjEH0xY/xljNdMKq4XzDvB40xrCpa3RN7Hk++TvWv8vu1nz4PglHlASZ6U7N1bSfz+mny9i3s4AD8EeH+BvtqVfjTs5ocmtYXmahjbuzl5D3IkSJ7zqIRGpLLl28SPz4W/b/TZ+H0L/58B/9H/107NfutoeOnst7f0aMB/NP5Ts986Gl46+0cWfjrgP/p8dyp+K/svjX9s4U8G/B/hD851vO8bne/op4vtx96qevvFHD/8Bw==&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+        <br><br>
+    </div>
+    <br>
+    <h4>Derivation of formula for area of trapezoid</h4>
+    <div class="cmath cmjx-indent">
+       `b=a+c+d class{cmjx-equation_number}{(1)}`<br>
+       `"Area of the trapezoid" = "area of the left triangle" + "area of rectangle" + "area of the right triangle"`
+       `{:
+        ("Area of the trapezoid" ,=, 1/2 ch + ah + 1/2 dh,),
+        (                        ,=, h(a + (c + d)/2),),
+        ("from (1)      " a+c    ,=, b-a,class{cmjx-equation_number}{(2)}),
+        ("subsituting (1) in (2)" ,=, h(a + (b-a)/2),),
+        (                         ,=, h(a + b/2 - a/2),),
+        (                         ,=, h((a + b))/2,),
+        (                         ,=, "distance between parallel lines" xx "average of parallel sides",class{cmjx-equation_number}{(3)})
+       :}`
+    </div><br>
+
+    <h3>Monomial, binomial, trinomial and polynomial</h3>
+    <div class="cmath cmjx-indent">
+    <h4>Monomial</h4>
+    A monomial consists of one term and is a constant or the product of constants and/or variables with exponents that are whole numbers.<br>
+    <h5>Examples</h5>
+    `2x^3", "-5", "x^2y", "7xyz", "z`
+    <h4>Binomial</h4>
+    A binomial consists of two terms.<br>
+    <h5>Examples</h5>
+    `x+5", "xy-7y", "x^2-4`
+    <h4>Trinomial</h4>
+    A trinomial consists of three terms.<br>
+    <h5>Examples</h5>
+    `x^2+7x+10", "x+2xy+y`<br><br>
+    Monomials, binomials, and trinomials are all types of <b>polynomials</b> and can have <u>any number of terms</u>.<br><br>
+    <div class="cmjx-redbox">
+        The <b>degree of a polynomial</b> is the highest degree of any of its term. <br>
+        If a term has one variable, the degree of the term is the exponent of the variable.<br>
+        `{:
+            ("  ",y,"exponent is 1, first degree term","(linear)",),
+            ("  ",b^2,"exponent is 2, second degree term","(quadratic)",),
+            ("  ",p^3,"exponent is 3, third degree term","(cubic)",)
+        :}`<br>
+        If a term has more than one variable, the degree of the term is the sum of the exponents.
+        `{:
+            ("  ",4ac,"exponents are " 1 + 1 = 2," the degree of the term is 2",),
+            ("  ",6xyz,"exponents are "  1+1+1=3," the degree of the term is 3",),
+            ("  ",5p^3q^2,"exponents are " 3+2=5," the degree of the term is 5",)
+        :}`<br>
+    </div>
+
+    </div>
+
+    <script>
+
+        TESTER = document.getElementById('tester');
+    
+        Plotly.newPlot( TESTER, [{
+    
+        x: [1, 2, 3, 4, 5],
+    
+        y: [1, 2, 4, 8, 16] }], {
+    
+        margin: { t: 0 } } );
+    
+    </script>
+    <p>TESTER('tester')</p>
+</body>
