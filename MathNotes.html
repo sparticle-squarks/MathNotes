@@ -27,6 +27,18 @@
             margin-right: 4px;
             height: auto;
             max-width: 80ch;
+            display: flex;
+            flex-flow: wrap;
+        
+        }
+        .cmjx-redbox-size { border: 2px solid #DD4A68;
+            padding: 8px;
+            margin-right: 4px;
+            height: auto;
+            max-width: var(--width);
+            display: flex;
+            flex-flow: wrap;
+        
         }
         .cmjx-indent {
             margin-left: 30px;
@@ -46,6 +58,23 @@
       .cmjx-note {
         font-style: italic;
         color: #FF0000;
+      }
+      .cmjx-highlight {
+        background-color: #FFFF00;
+      }
+      .cmjx-highlight-color {
+        background-color: var(--color);
+      }
+      .cmjx-defined {
+        font-weight: bold;
+        font-size: 2.0em;
+        color: #0000FF;
+      }
+      .cmjx-definition {
+        font-weight: bold;
+        font-size: 2.0em;
+        color: #0000FF;
+        font-style: italic;
       }
    </style>
 </head>
@@ -496,4 +525,102 @@ we get `Ax=C => x=C/A class{cmjx-equation_number}{(3)`}<br>
 
     `if x>=y and z<0, " then "xz <= yz`
     `if x>=y and z<0, " then "x/z <= y/z`
+</div>
+<h3> Linear equations</h3>
+<p>
+<br> To be added <br>
+</p>
+<h3> Exponential Functions </h3>
+
+<div class = "cmath cmjx-indent">
+    <div class="cmjx-redbox-size" style="--width : 120ch">
+        <div class="cmjx-highlight-color" style="--color : #D0F0D0">
+                <div class="cmjx-defined">Asymptote:<br></div>
+                <div class="cmjx-definition">
+                    An asymptote is a line that a curve approaches, as it heads towards infinity.<br><br>
+                    or<br><br>
+                    An asymptote is a line where a functions approaches it but never quite reaches it.
+                </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="cmjx-redbox-size" style="--width : 120ch">
+        <div class="cmjx-highlight-color" style="--color : #D0F0D0">
+                <div class="cmjx-defined">Constant Ratio:<br></div>
+                <div class="cmjx-definition">
+                    constant ratio is the factor by which the function grows or decays.<br>
+                    In other words it is ratio of `f(x_n)/f(x_{n-2})`<br>
+                    Where <br>
+                    `{:
+                        (f(x_n), "is the value of function at ", x_n),
+                        (f(x_{n-2}), "is the value of function at",x_{n-1}),
+                        (,,)
+                    :}`
+                    <br><br>
+                </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="cmjx-redbox-size" style="--width : 120ch">
+        <div class="cmjx-highlight-color" style="--color : #D0F0D0">
+                <div class="cmjx-defined">Exponential Function:<br></div>
+                <div class="cmjx-definition">
+                    An exponential function is the product of an initial value and constant ratio raised to a power.<br><br>
+                    `f(x) = a * b^x`<br><br>
+                    where a is the initial value and b is the constant ratio and `a != 0 and b > 0`.
+                </div>
+
+        </div>
+    </div>
+    <br><br>
+    <h3>Exponential Growth and Decay</h3>
+    <p>
+    Exponential growth and decay are two types of exponential functions.
+    <p></p>
+    <h4>Exponential growth can be modeled by the equation </h4>
+    `{:
+        (f(x), =, a*b^x, "where", a != 0 and b > 1, class{cmjx-equation_number}{(1)} ),
+        (f(x), =, a(1+r)^x, "where", a != 0 and r > 0, class{cmjx-equation_number}{(2)})
+    :}`<br><br>
+    <h4>Exponential decay can be modeled by the equation </h4>
+    `{:
+        (f(x), =, a*b^x, "where", a != 0 and 0 < b < 1, class{cmjx-equation_number}{(3)} ),
+        (f(x), =, a(1-r)^x, "where", a != 0 and 0 < r < 1, class{cmjx-equation_number}{(4)})
+    :}`<br><br>
+    </p>
+    <div class="cmjx-redbox-size" style="--width : 30ch">
+        `{:
+            ( (1+r), "is growth factor"),
+            ( r,     "is growth rate")
+        :}`
+    </div>
+    <h4> Simple Interest</h4>
+    <p>
+    `A = P*r*n*t class{cmjx-equation_number}{(5)}`<br><br>
+    where<br>
+    `{:
+        (A, =, "amount"),
+        (P, =, "principal amount"),
+        (r, =, "rate of interest per year"),
+        (n, =, "number of time interest is paid per year"),
+        (t, =, "time in years")
+    :}`<br><br>
+    `class{cmjx-note}{ "Note :"<br> "Simple interest is interest that is paid only on the principal amount."}`
+    `class{cmjx-note}{ "Note :"<br> "Simple interest is a linear function. When plotted it will be a straight line."}`
+    </p>
+
+    <h4> Compound Interest</h4>
+    `A = P*(1+r/n)n*t class{cmjx-equation_number}{(6)}`<br><br>
+    where<br>
+    `{:
+        (A, =, "amount"),
+        (P, =, "principal amount"),
+        (r, =, "rate of interest"),
+        (n, =, "number of times interest is compounded per year"),
+        (t, =, "time in years")
+    :}`<br>
+    `class{cmjx-note}{ "Note :"<br> "Compound interest is interest that is paid both on the pricipal and on the interest that has already been paid."}`
+    `class{cmjx-note}{ "Note :"<br> "Compound interest is a exponential function. When plotted it will be a exponential curve."}`
 </div>
